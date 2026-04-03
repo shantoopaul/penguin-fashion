@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tail": "pnpm dlx @tailwindcss/cli -i ./src/input.css -o ./src/styles.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

@@ -41,6 +41,17 @@
     src: url('../assets/fonts/bebas-neue-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+@theme {
+    --color-primary: #A4BC46;
+    --color-primary-dark-shade: #85A019;
+    --color-secondary: #FABE4C;
+    --color-heading: #363958;
+    --color-base: #3E3E3E;
+    --color-nav: #3C3C3C;
+    --color-bg: #FFFBF0;
+    --color-product-bg: #F1F1F1;
+}
+
 img, picture {
     display: block;
     max-width: 100%;
@@ -54,9 +65,10 @@ p {
     text-wrap: pretty;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
     text-wrap: balance;
+    line-height: 1.2;
 }
 
 body {

@@ -48,6 +48,87 @@
 		<link rel="stylesheet" href="./src/styles.css" />
 		<title>Penguin Fashion</title>
 	</head>
-	<body>
+	<body class="text-base">
+		<header class="bg-bg pb-11 sm:pb-32 px-4 md:px-8">
+			<nav class="max-w-292 mx-auto py-10 flex justify-between items-center">
+				<h1 class="max-w-48 sm:max-w-64 lg:max-w-72"><a href="/"><img src="./assets/icons/brand-logo.png" alt="Fashion Penguin Logo"></a></h1>
+				<ul class="hidden md:flex gap-10 lg:gap-14 text-nav font-medium">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
+			</nav>
+
+			<div class="max-w-292 mx-auto flex flex-col md:flex-row items-center gap-14 lg:gap-24">
+				<hgroup>
+					<h2 class="text-6xl max-w-[14ch] lg:text-7xl xl:text-[80px]"><span class="text-secondary">Be the Penguins</span> of Winter</h2>
+					<p class="max-w-[40ch] w-full mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+				</hgroup>
+				<picture>
+					<img src="./assets/hero-model.png" alt="">
+				</picture>
+			</div>
+		</header>
+		<main>
+			<section class="mt-12 max-w-292 mx-auto px-4 md:px-8">
+				<h2 class="text-4xl md:text-5xl text-center md:text-left mb-6">Woman Jacket</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+					<div class="p-4.5 pb-6 rounded-[20px] shadow-xl flex flex-col gap-4">
+						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
+							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-1.png" alt="">
+						</picture>
+						<div class="flex flex-col gap-3">
+							<hgroup class="flex flex-col gap-3">
+								<h3 class="text-2xl font-bold">Yellow Coat Jacket</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</hgroup>
+							<div class="flex justify-between items-center">
+								<span class="text-4xl font-black text-secondary">$234</span>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="p-4.5 pb-6 rounded-[20px] shadow-xl flex flex-col gap-4">
+						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
+							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-2.png" alt="">
+						</picture>
+						<div class="flex flex-col gap-3">
+							<hgroup class="flex flex-col gap-3">
+								<h3 class="text-2xl font-bold">Ladies Jacket</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</hgroup>
+							<div class="flex justify-between items-center">
+								<span class="text-4xl font-black text-secondary">$234</span>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="p-4.5 pb-6 rounded-[20px] shadow-xl flex flex-col gap-4">
+						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
+							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-3.png" alt="">
+						</picture>
+						<div class="flex flex-col gap-3">
+							<hgroup class="flex flex-col gap-3">
+								<h3 class="text-2xl font-bold">Woman Leather Jacket</h3>
+								<p>
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+								</p>
+							</hgroup>
+							<div class="flex justify-between items-center">
+								<span class="text-4xl font-black text-secondary">$234</span>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
