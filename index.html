@@ -44,9 +44,24 @@
 			rel="preload"
 			as="image"
 			href="./assets/hero-model.png" />
-		<!-- Stylesheet -->
-		<link rel="stylesheet" href="./src/styles.css" />
+		<!-- Page title -->
 		<title>Penguin Fashion</title>
+		<!-- Tailwind CSS -->
+		<script async src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+		<style type="text/tailwindcss">
+			@theme {
+				--color-primary: #A4BC46;
+				--color-primary-dark-shade: #85A019;
+				--color-secondary: #FABE4C;
+				--color-heading: #363958;
+				--color-base: #3E3E3E;
+				--color-nav: #3C3C3C;
+				--color-bg: #FFFBF0;
+				--color-product-bg: #F1F1F1;
+			}
+		</style>
+		<!-- Stylesheet -->
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body class="text-base">
 		<header class="bg-bg pb-11 sm:pb-32 px-4 md:px-8">

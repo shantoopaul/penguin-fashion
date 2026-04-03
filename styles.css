@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 /* roboto-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -39,17 +37,6 @@
     font-style: normal;
     font-weight: 400;
     src: url('../assets/fonts/bebas-neue-v16-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
-@theme {
-    --color-primary: #A4BC46;
-    --color-primary-dark-shade: #85A019;
-    --color-secondary: #FABE4C;
-    --color-heading: #363958;
-    --color-base: #3E3E3E;
-    --color-nav: #3C3C3C;
-    --color-bg: #FFFBF0;
-    --color-product-bg: #F1F1F1;
 }
 
 img, picture {
