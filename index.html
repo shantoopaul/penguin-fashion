@@ -52,6 +52,21 @@
 		<header class="bg-bg pb-11 sm:pb-32 px-4 md:px-8">
 			<nav class="max-w-292 mx-auto py-10 flex justify-between items-center">
 				<h1 class="max-w-48 sm:max-w-64 lg:max-w-72"><a href="/"><img src="./assets/icons/brand-logo.png" alt="Fashion Penguin Logo"></a></h1>
+				<button popovertarget="my-dialog" class="md:hidden p-2">
+					<img src="./assets/icons/menu-icon.png" class="w-7 h-7" />
+				</button>
+				<dialog
+					id="my-dialog"
+					popover
+					class="md:hidden m-0 p-6 rounded-xl border-0 shadow-lg fixed top-18 right-6 opacity-0 -translate-y-2 transition-all duration-200 backdrop:bg-transparent [&:popover-open]:opacity-100 [&:popover-open]:translate-y-0 inset-auto">
+					<ul class="flex flex-col gap-4">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Product</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+					<button popovertarget="my-dialog" popovertargetaction="hide" class="md:hidden absolute top-2 right-3 text-lg text-gray-500 hover:text-black">✕</button>
+				</dialog>
 				<ul class="hidden md:flex gap-10 lg:gap-14 text-nav font-medium">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Product</a></li>
