@@ -52,7 +52,7 @@
 			@theme {
 				--color-primary: #A4BC46;
 				--color-primary-dark-shade: #85A019;
-				--color-secondary: #FABE4C;
+				--color-secondary: #CC8500;
 				--color-heading: #363958;
 				--color-base: #3E3E3E;
 				--color-nav: #3C3C3C;
@@ -67,11 +67,12 @@
 		<header class="bg-bg pb-11 sm:pb-32 px-4 md:px-8">
 			<nav class="max-w-292 mx-auto py-10 flex justify-between items-center">
 				<h1 class="max-w-48 sm:max-w-64 lg:max-w-72"><a href="/"><img src="./assets/icons/brand-logo.png" alt="Fashion Penguin Logo"></a></h1>
-				<button popovertarget="my-dialog" class="md:hidden p-2">
-					<img src="./assets/icons/menu-icon.png" class="w-7 h-7" />
+				<!-- Mobile menu -->
+				<button popovertarget="menu" aria-label="open-menu" class="md:hidden p-2">
+					<img aria-hidden="true" src="./assets/icons/menu-icon.png" alt="" class="w-10 h-10" />
 				</button>
 				<dialog
-					id="my-dialog"
+					id="menu"
 					popover
 					class="md:hidden m-0 p-6 rounded-xl border-0 shadow-lg fixed top-18 right-6 opacity-0 -translate-y-2 transition-all duration-200 backdrop:bg-transparent [&:popover-open]:opacity-100 [&:popover-open]:translate-y-0 inset-auto">
 					<ul class="flex flex-col gap-4">
@@ -80,8 +81,9 @@
 						<li><a href="#">About us</a></li>
 						<li><a href="#">Contact us</a></li>
 					</ul>
-					<button popovertarget="my-dialog" popovertargetaction="hide" class="md:hidden absolute top-2 right-3 text-lg text-gray-500 hover:text-black">✕</button>
+					<button popovertarget="menu" popovertargetaction="hide" aria-label="close-menu" class="md:hidden absolute top-2 right-3 text-lg text-gray-500 hover:text-black">✕</button>
 				</dialog>
+
 				<ul class="hidden md:flex gap-10 lg:gap-14 text-nav font-medium">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Product</a></li>
@@ -90,14 +92,14 @@
 				</ul>
 			</nav>
 
-			<div class="max-w-292 mx-auto flex flex-col md:flex-row items-center gap-14 lg:gap-24">
+			<div class="max-w-292 mx-auto flex flex-col md:flex-row items-center gap-14 lg:gap-32">
 				<hgroup>
 					<h2 class="text-6xl max-w-[14ch] lg:text-7xl xl:text-[80px]"><span class="text-secondary">Be the Penguins</span> of Winter</h2>
 					<p class="max-w-[40ch] w-full mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-					<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+					<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 				</hgroup>
 				<picture>
-					<img src="./assets/hero-model.png" alt="">
+					<img src="./assets/hero-model.png" aria-hidden="true" alt="">
 				</picture>
 			</div>
 		</header>
@@ -107,7 +109,7 @@
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-8">
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-1.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-1.png" alt="Orange Coat Jacket for Women">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -118,13 +120,13 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-2.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-2.png" alt="Orange Jacket for Women">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -135,13 +137,13 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-3.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-3.png" alt="Red Leather Jacket for Women">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -152,7 +154,7 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
@@ -164,7 +166,7 @@
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-4.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-4.png" alt="Snowboard Jacket for Men">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -175,13 +177,13 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-5.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-5.png" alt="Leather Jacket for Men">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -192,13 +194,13 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
 					<div class="max-w-117 p-4.5 pb-6 rounded-[20px] shadow-2xl/10 flex flex-col gap-4">
 						<picture class="bg-product-bg rounded-[20px] p-6 max-h-82">
-							<img class="w-full h-full object-contain" src="./assets/product-image/jacket-6.png" alt="">
+							<img loading="lazy" class="w-full h-full object-contain" src="./assets/product-image/jacket-6.png" alt="Casual Jacket for Men">
 						</picture>
 						<div class="flex flex-col gap-3">
 							<hgroup class="flex flex-col gap-3">
@@ -209,7 +211,7 @@
 							</hgroup>
 							<div class="flex justify-between items-center">
 								<span class="text-4xl font-black text-secondary">$234</span>
-								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
+								<a href="#" class="bg-linear-to-b from-primary to-primary-dark-shade rounded-xl px-8 py-4 text-white font-medium flex gap-2 items-center max-w-fit"><img aria-hidden="true" loading="lazy" src="./assets/icons/shopping-cart.png" alt="" width="24" height="24">Buy Now</a>
 							</div>
 						</div>
 					</div>
@@ -219,7 +221,7 @@
 				<div class="flex-1 flex flex-col gap-4 max-w-122 w-full text-center lg:text-left">
 					<div class="flex flex-col items-center gap-4 lg:gap-9 lg:flex-row rounded-[20px] shadow-lg/3 px-7 py-5">
 						<picture class="w-20 lg:w-26">
-							<img class="w-full h-full object-contain" src="./assets/icons/house.png" alt="">
+							<img aria-hidden="true" loading="lazy" class="w-full h-full object-contain" src="./assets/icons/house.png" alt="">
 						</picture>
 						<hgroup class="flex flex-col gap-3.5">
 							<h3 class="font-bold text-2xl text-heading">Find the Perfect Fit</h3>
@@ -228,7 +230,7 @@
 					</div>
 					<div class="flex flex-col items-center gap-4 lg:gap-9 lg:flex-row rounded-[20px] shadow-lg/3 px-7 py-5">
 						<picture class="w-20 lg:w-26">
-							<img class="w-full h-full object-contain" src="./assets/icons/box.png" alt="">
+							<img aria-hidden="true" loading="lazy" class="w-full h-full object-contain" src="./assets/icons/box.png" alt="">
 						</picture>
 						<hgroup>
 							<h3 class="font-bold text-2xl text-heading">Free Exchanges</h3>
@@ -237,7 +239,7 @@
 					</div>
 					<div class="flex flex-col items-center gap-4 lg:gap-9 lg:flex-row rounded-[20px] shadow-lg/3 px-7 py-5">
 						<picture class="w-20 lg:w-26">
-							<img class="w-full h-full object-contain" src="./assets/icons/question.png" alt="">
+							<img aria-hidden="true" loading="lazy" class="w-full h-full object-contain" src="./assets/icons/question.png" alt="">
 						</picture>
 						<hgroup>
 							<h3 class="font-bold text-2xl text-heading">Contact Our Seller</h3>
@@ -246,7 +248,7 @@
 					</div>
 				</div>
 				<picture class="flex-1">
-					<img class="w-150" src="./assets/shopping-illustration.png" alt="">
+					<img aria-hidden="true" loading="lazy" class="w-150" src="./assets/shopping-illustration.png" alt="">
 				</picture>
 			</section>
 		</main>
