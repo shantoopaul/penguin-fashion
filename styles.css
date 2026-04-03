@@ -58,9 +58,21 @@ h1, h2 {
     line-height: 1.2;
 }
 
+h1 a {
+  display: inline-block;
+}
+
 body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+}
+
+:focus {
+	outline: none;
+}
+
+:focus-visible, a:focus-visible {
+	outline: 3px solid #A4BC46;
 }
